@@ -1,1 +1,60 @@
-
+body {
+  background-color: grey;
+}
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+nav h1 {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: orange;
+  font-weight: bolder;
+}
+nav h1 span {
+  color: grey;
+}
+nav ul {
+  color: orange;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  display: flex;
+  font-weight: bolder;
+}
+nav ul * {
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+nav ul li:hover {
+  background-color: orange;
+  color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  height: 100%;
+  width: 100%;
+}
+main > div {
+  width: 70%;
+  background-color: grey;
+}

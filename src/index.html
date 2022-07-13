@@ -6,22 +6,24 @@
 		<script src="..\node_modules\angular.min.js"></script>
 		<script src="..\node_modules\angular-route.min.js"></script>
 		<script src="main.js"></script>
-		<title>Template</title>
+		<title>dotShadow | Shadow Priest Guide</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap">
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body ng-app="main">
-		<header ng-include="'app/app.header.html'">
-		</header>
-		<main ng-controller="mainController">
-			<div>
-				hey
-			</div>
-		</main>
+		<div id="container">
+			<header ng-include="'app/app.header.html'">
+			</header>
+			<main>
+				<div ng-view>
+					There was an error loading this view. 
+				</div>
+				<footer>
+					Website by Rohit Naidu.
+				</footer>
+			</main>
+		</div>
 	</body>
-	<footer>
-		Website by Rohit Naidu.
-	</footer>
 </html>
